@@ -18,5 +18,18 @@ int main() {
     std::cout << dynamicIntArray14 << std::endl;
     std::cout << "+ : " << dynamicIntArray13 + dynamicIntArray14 << std::endl;
 
+
+    std::cout << "________________________________" << std::endl;
+    DynamicIntArray arr(3);
+    arr.pushBack(10);
+    arr.pushBack(20);
+    arr.pushBack(30);
+    for (int i = 0; i < arr.getSize(); ++i) {
+        std::cout << arr[i] << " ";
+    }
+    std:: cout << std::endl;
+    std::cout << "________________________________" << std::endl;
+    dynamicIntArray13.popBack();
+    std::cout << dynamicIntArray13 << std::endl;
     return 0;
 }

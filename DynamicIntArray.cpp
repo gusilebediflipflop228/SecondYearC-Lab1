@@ -262,17 +262,17 @@ void DynamicIntArray::reserve(int buffer) {
 int DynamicIntArray::capacity() const { return _buffer; }
 
 void DynamicIntArray::pushBack(int element) {
-  if (_buffer < 1) {
-    throw std::exception();
-  }
+  // if (_buffer < 1) {
+  //   throw std::exception();
+  // }
   _array[_size++] = element;
   _buffer--;
 }
 
 int DynamicIntArray::popBack() {
-  if (_size < 1) {
-    throw std::exception();
-  }
+  // if (_size < 1) {
+  //   throw std::exception();
+  // }
   _buffer++;
   return _array[--_size];
 }
